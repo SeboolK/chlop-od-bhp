@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://chlopodbhp.pl
+
+# Sitemaps
+Sitemap: https://chlopodbhp.pl/sitemap.xml

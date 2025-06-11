@@ -1,0 +1,8 @@
+.timeline {
+  position: relative;
+  z-index: 2;
+  margin-top: var(--padding-default);
+  margin-bottom: -4rem;
+  display: flex;
+  flex-direction: column;
+}

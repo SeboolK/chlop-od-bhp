@@ -1,0 +1,51 @@
+.socials,
+.socialsWhite {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  & a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: var(--accent);
+    border: 2px solid var(--accent);
+    padding: 0.7rem;
+    transition: var(--transition);
+    border-radius: calc(var(--border-radius) / 2);
+
+    &:hover {
+      background-color: transparent;
+    }
+    &:hover svg {
+      color: var((--accent));
+    }
+  }
+  & svg {
+    color: var(--bg-color);
+    width: 26px;
+    height: 26px;
+  }
+}
+
+.socialsWhite {
+  & a {
+    background-color: var(--bg-color);
+    border: 2px solid var(--bg-color);
+    padding: 0.7rem;
+    transition: var(--transition);
+    &:hover {
+      background-color: transparent;
+    }
+    &:hover svg {
+      color: var((--bg-color));
+    }
+  }
+  & svg {
+    color: var(--accent);
+    width: 26px;
+    height: 26px;
+  }
+}

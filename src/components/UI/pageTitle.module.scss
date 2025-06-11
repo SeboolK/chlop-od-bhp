@@ -1,0 +1,9 @@
+.pageTitle {
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  padding: calc(var(--nav-height) + 2rem) var(--padding-default) 0;
+  @media (min-width: 1000px) {
+    padding: calc(var(--nav-height) + 4rem) 4rem 0;
+  }
+}

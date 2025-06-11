@@ -1,0 +1,41 @@
+.notFound {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  perspective: 1000px;
+  & h1 {
+    font-family: var(--secondary-font);
+    font-size: 50vw;
+    line-height: 1.2;
+    animation: fullSpin 6s infinite linear;
+    transform-style: preserve-3d;
+    @media (min-width: 700px) {
+      font-size: 30vw;
+    }
+    @media (min-width: 1400px) {
+      font-size: 40rem;
+    }
+  }
+  & a {
+    color: var(--accent);
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+@keyframes fullSpin {
+  0% {
+    transform: rotateY(0deg);
+    color: var(--text-color);
+  }
+  50% {
+    color: var(--accent);
+  }
+  100% {
+    transform: rotateY(360deg);
+    color: var(--text-color);
+  }
+}

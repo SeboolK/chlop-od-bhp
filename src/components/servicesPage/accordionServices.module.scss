@@ -1,0 +1,44 @@
+.accordionServices {
+  @media (min-width: 1000px) {
+    margin-top: -6rem;
+  }
+}
+
+.accordion {
+  margin-bottom: var(--padding-default);
+  &__title {
+    display: flex;
+    gap: var(--padding-default);
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    & span {
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__content {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    & li {
+      display: flex;
+      align-items: flex-start;
+      position: relative;
+      padding-left: 16px;
+      line-height: 1.6;
+    }
+
+    & li::before {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: 0;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: var(--text-color);
+    }
+  }
+}

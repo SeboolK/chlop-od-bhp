@@ -1,0 +1,24 @@
+.servicesSection {
+  position: relative;
+  background-color: var(--color-ui2);
+  &__text {
+    margin-bottom: var(--padding-default);
+    @media (min-width: 1000px) {
+      margin-bottom: 4rem;
+    }
+  }
+  &__textWrapper {
+    position: relative;
+    z-index: 2;
+    @media (min-width: 1200px) {
+      margin-top: 2rem;
+    }
+  }
+  &__wrapper {
+    @media (min-width: 1200px) {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 5rem;
+    }
+  }
+}

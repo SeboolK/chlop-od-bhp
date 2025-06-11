@@ -1,0 +1,92 @@
+// .imageFixed {
+//   position: relative;
+//   overflow: hidden;
+//   &__wrapper {
+//     position: relative;
+//     margin: 7rem auto;
+//     padding: var(--padding-default);
+//     max-width: 900px;
+//     text-align: center;
+//     color: var(--bg-color);
+//     z-index: 3;
+//     @media (min-width: 1000px) {
+//       margin: 10rem auto;
+//     }
+//   }
+//   &__title {
+//     border-top: 1px solid var(--bg-color);
+//     border-bottom: 1px solid var(--bg-color);
+//     padding: 3rem 0;
+//     font-weight: 300;
+//     font-size: 9vw;
+//     line-height: 1.2;
+//     @media (min-width: 600px) {
+//       font-size: 6vw;
+//     }
+//     @media (min-width: 940px) {
+//       font-size: 5vw;
+//     }
+//     @media (min-width: 940px) {
+//       font-size: 5.6rem;
+//     }
+//   }
+//   & p {
+//     margin-top: 4rem;
+//     font-style: italic;
+//   }
+// }
+
+.imageFixed {
+  margin: 4rem var(--padding-default) var(--padding-default);
+  border-radius: var(--border-radius);
+  position: relative;
+  overflow: hidden;
+  min-height: 300px;
+  @media (min-width: 1000px) {
+    margin: 10rem 4rem var(--padding-default);
+  }
+  @media (min-width: 1400px) {
+    max-width: 1320px;
+    margin: 10rem auto var(--padding-default);
+  }
+  &__bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+  }
+  &__wrapper {
+    margin: var(--padding-default);
+    margin-top: 20rem;
+    border-radius: calc(var(--border-radius) - 5px);
+    position: relative;
+    padding: var(--padding-default) 1rem;
+    z-index: 2;
+    background-color: var(--bg-color);
+    text-align: center;
+
+    @media (min-width: 1000px) {
+      padding: 4rem var(--padding-default);
+      margin: 30rem 4rem 4rem;
+    }
+    @media (min-width: 1400px) {
+      margin-top: 35rem;
+    }
+  }
+  &__title {
+    max-width: 700px;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    font-size: 6.8vw;
+    line-height: 1.2;
+
+    @media (min-width: 650px) {
+      font-size: 4.8vw;
+    }
+    @media (min-width: 1000px) {
+      font-size: 4rem;
+      margin-bottom: 2rem;
+    }
+  }
+}

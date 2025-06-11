@@ -1,0 +1,42 @@
+.privacy {
+  & h2,
+  & h3 {
+    font-weight: 500;
+    margin: var(--padding-default) 0;
+  }
+  & h3,
+  & p,
+  & ul {
+    margin-bottom: 1rem;
+  }
+  & li {
+    display: flex;
+    align-items: flex-start; // lepiej wyrównuje tekst z kropką
+    position: relative;
+    padding-left: 16px; // miejsce na kropkę
+  }
+
+  & li::before {
+    content: "";
+    position: absolute;
+    top: 8px; // dopasuj pionowe pozycjonowanie
+    left: 0;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--text-color);
+  }
+  & a {
+    color: var(--accent);
+    font-weight: 500;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__separator {
+    width: 100%;
+    height: 1px;
+    margin: 4rem 0;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}

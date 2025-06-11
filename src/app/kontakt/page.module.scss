@@ -1,0 +1,21 @@
+.contactPage {
+  &__wrapper {
+    @media (min-width: 1000px) {
+      margin-top: -6rem;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 8rem;
+    }
+  }
+  &__form {
+    padding-top: var(--padding-default);
+    @media (min-width: 1000px) {
+      margin-top: -5rem;
+    }
+  }
+  &__subtitle {
+    @media (min-width: 1000px) {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,99 @@
+// .cta {
+//   position: relative;
+//   overflow: hidden;
+//   &__wrapper {
+//     position: relative;
+//     max-width: 650px;
+//     margin: 0 auto;
+//     padding: 6rem var(--padding-default);
+//     z-index: 2;
+//     color: var(--bg-color);
+//     text-align: center;
+//     @media (min-width: 1000px) {
+//       padding: 10rem var(--padding-default);
+//     }
+//     & p {
+//       margin-bottom: 4rem;
+//     }
+//   }
+//   & h2 {
+//     text-align: center;
+//     margin-bottom: 3rem;
+//     font-weight: 300;
+//     font-size: 9vw;
+//     line-height: 1.2;
+
+//     @media (min-width: 650px) {
+//       font-size: 6vw;
+//     }
+//     @media (min-width: 1400px) {
+//       font-size: 7rem;
+//     }
+//   }
+// }
+
+.cta {
+  margin: var(--padding-default) 0;
+  border-radius: var(--border-radius);
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 400px;
+  &__bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+  }
+  &__wrapper {
+    margin: var(--padding-default);
+    margin-top: 22rem;
+    border-radius: calc(var(--border-radius) - 5px);
+    position: relative;
+    padding: var(--padding-default) 1rem;
+    z-index: 2;
+    background-color: var(--bg-color);
+    text-align: center;
+    @media (min-width: 450px) {
+      margin-top: 30rem;
+    }
+    @media (min-width: 1000px) {
+      padding: 4rem var(--padding-default);
+      margin: 4rem auto 4rem 4rem;
+      width: 50%;
+      max-width: 550px;
+      text-align: left;
+    }
+    & p {
+      margin-bottom: 3rem;
+      @media (min-width: 1000px) {
+        margin-bottom: 4rem;
+      }
+    }
+  }
+  & h2 {
+    margin-bottom: 2rem;
+    font-weight: 400;
+    font-size: 9vw;
+    line-height: 1.2;
+
+    @media (min-width: 650px) {
+      font-size: 6vw;
+    }
+    @media (min-width: 1000px) {
+      margin-bottom: 3rem;
+      font-size: 4.6rem;
+    }
+  }
+  &__imgMobile {
+    @media (min-width: 650px) {
+      display: none;
+    }
+  }
+  &__imgDesktop {
+    display: none;
+    @media (min-width: 650px) {
+      display: block;
+    }
+  }
+}

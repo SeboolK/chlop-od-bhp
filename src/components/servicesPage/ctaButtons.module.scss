@@ -1,0 +1,10 @@
+.buttons {
+  margin-top: -2rem;
+  margin-bottom: var(--padding-default);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--padding-default);
+  @media (min-width: 1000px) {
+    margin-top: -6rem;
+  }
+}

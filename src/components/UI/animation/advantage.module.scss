@@ -1,0 +1,29 @@
+.advantage {
+  position: relative;
+  background-color: var(--color-ui2);
+  border-radius: var(--border-radius);
+  padding: var(--padding-default);
+  text-align: center;
+  transition: var(--transition);
+  @media (min-width: 1024px) {
+    &:hover {
+      transform: translateY(-10px);
+    }
+  }
+
+  &__number {
+    font-family: var(--secondary-font);
+    font-size: 5rem;
+    color: var(--accent);
+    font-weight: 500;
+    @media (min-width: 1000px) {
+      font-size: 6rem;
+    }
+  }
+  &__text {
+    font-size: 2rem;
+    @media (min-width: 1230px) {
+      font-size: 2.2rem;
+    }
+  }
+}

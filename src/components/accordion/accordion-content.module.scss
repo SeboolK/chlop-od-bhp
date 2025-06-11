@@ -1,0 +1,16 @@
+.open {
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.1s ease;
+  opacity: 1;
+  padding: 1rem 0;
+}
+
+.close {
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.1s ease;
+  max-height: 0;
+  opacity: 0;
+}
+.inner {
+  padding: var(--padding-default);
+}

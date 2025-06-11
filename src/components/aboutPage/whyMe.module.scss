@@ -1,0 +1,59 @@
+.whyMe {
+  position: relative;
+  background: var(--color-ui2);
+  &__cards {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--padding-default);
+    margin-bottom: var(--padding-default);
+    margin-top: 4rem;
+    @media (min-width: 560px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (min-width: 1000px) {
+      grid-template-columns: repeat(4, 1fr);
+      margin-top: 0;
+    }
+    @media (min-width: 1400px) {
+      gap: 3.5rem;
+    }
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--padding-default);
+    overflow: hidden;
+    background-color: var(--bg-color);
+    height: 100%;
+  }
+  &__imgWrapper {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    // aspect-ratio: 640/426;
+    padding-top: calc(426 / 640 * 100%);
+    & img {
+      object-fit: cover;
+      transition: var(--transition);
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+  &__textWrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-default);
+    text-align: center;
+  }
+  &__title {
+    text-align: center;
+    padding: 1rem var(--padding-default);
+    color: var(--bg-color);
+    background-color: var(--accent);
+    font-weight: 500;
+  }
+}

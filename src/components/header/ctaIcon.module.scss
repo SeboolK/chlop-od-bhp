@@ -1,0 +1,40 @@
+.cta {
+  position: relative;
+  padding: 1rem 1rem 1rem 4.2rem;
+  background-color: var(--color-ui2);
+  border-radius: calc(var(--border-radius) / 2);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--text-color);
+
+  @media (min-width: 360px) {
+    display: flex;
+  }
+  & p {
+    position: relative;
+    top: 1px;
+    line-height: 1.4;
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+
+  &:hover .cta__icon {
+    width: calc(100% - 1.2rem);
+  }
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--accentLogo);
+    height: 3.1rem;
+    width: 3rem;
+    position: absolute;
+    top: 6px;
+    left: 0.6rem;
+    transition: var(--transition);
+    color: var(--bg-color);
+    border-radius: calc(var(--border-radius) / 2 - 3px);
+  }
+}

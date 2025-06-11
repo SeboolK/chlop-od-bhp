@@ -1,0 +1,8 @@
+.section {
+  padding: var(--padding-default);
+  max-width: 1400px;
+  margin: 0 auto;
+  @media (min-width: 1000px) {
+    padding: calc(var(--padding-default) * 3) calc(var(--padding-default) * 2);
+  }
+}

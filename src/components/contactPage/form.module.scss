@@ -1,0 +1,105 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: var(--border-radius);
+  margin: 0 auto;
+  margin-top: calc(var(--padding-default) * 1.5);
+
+  & label {
+    display: block;
+    color: var(--text-color);
+    text-align: left;
+  }
+  & input,
+  & textarea,
+  & select {
+    font-family: inherit;
+    width: 100%;
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    margin-top: 3px;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    border-radius: var(--border-radius);
+    background-color: var(--color-ui2);
+    border: 2px solid transparent;
+    resize: none;
+    &:focus {
+      border-color: rgb(116, 116, 116) !important;
+      outline: none;
+    }
+  }
+  &__btnWrapper {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (min-width: 1000px) {
+      margin-top: 4rem;
+    }
+  }
+  &__btn {
+    &:disabled {
+      background: rgb(160, 160, 160);
+      border: 2px solid rgb(160, 160, 160);
+      cursor: default;
+      &:hover {
+        background: rgb(160, 160, 160);
+        border: 2px solid rgb(160, 160, 160);
+        cursor: default;
+        color: var(--bg-color);
+      }
+    }
+  }
+  &__policyFlex {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  &__privacyPolicy label {
+    text-align: left;
+    margin-top: 1rem;
+    display: flex;
+    align-items: top;
+    font-size: 1.6rem;
+  }
+  &__privacyPolicy {
+    & input {
+      width: 18px;
+      height: 18px;
+      margin-bottom: 0;
+      margin-right: 0.7rem;
+      position: relative;
+      top: 1px;
+    }
+    & a {
+      color: var(--accent);
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.error {
+  color: red;
+  font-size: 1.4rem;
+  margin-top: -1.5rem;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+@keyframes fly {
+  from {
+    transform: translateY(0.1rem);
+  }
+  to {
+    transform: translateY(-0.5rem);
+  }
+}
+
+.privacyPolicy {
+  white-space: pre-line;
+}
