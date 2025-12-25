@@ -10,7 +10,7 @@
     "postbuild": "next-sitemap --config next-sitemap.config.mjs"
   },
   "dependencies": {
-    "next": "15.3.2",
+    "next": "15.3.8",
     "next-sitemap": "^4.2.3",
     "nodemailer": "^7.0.3",
     "react": "^19.0.0",
